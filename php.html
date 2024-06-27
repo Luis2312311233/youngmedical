@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Información</title>
+    <link rel="stylesheet" href="stylephp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Bienvenido!</h1>
+        <p>Por favor, déjanos tu información y nos pondremos en contacto contigo:</p>
+        
+        <form action="php1.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="whatsapp-btn">
+        <a href="https://wa.me/3325492615" target="_blank">
+            <img src="data:image/png;base64,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" alt="WhatsApp">
+        </a>
+    </div>
+</body>
+</html>
